@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ravel Management</title>
+
+  
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- Themify -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- Touchpin -->
+  <link rel="stylesheet" href="plugins/touchpin/jquery.bootstrap-touchspin.min.css">
+  <!-- Stylesheets -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  
+
+<!-- Navbar Start -->
+<nav class="main-nav navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="index.html">
+            Ravel Management
+        </a>
+        <!-- Toogle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="ti-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse nav-list" id="navbarNav">
+            <!-- Navigation Links -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="order.html">Order</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="request.html">Request</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="cart.html"><i class="ti-shopping-cart"></i>Cart</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+<section class="section cart">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="mb-5">Your Shopping Information</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <!-- Item Table -->
+                <div class="item-table">
+                    <h6 class="mb-4">Want to add more in Cart? <a href="index.html" class="btn btn-primary ml-2">Continue Shopping</a></h6>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Item ID</th>
+                                    <th scope="col">Item Name</th>
+                                    <th scope="col">Brand</th>
+                                    <th scope="col">NetPrice</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Total Amount</th>
+                                    <th scope="col">Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>943758</td>
+                                    <td>lorem ipsum</td>
+                                    <td>Panjeri</td>
+                                    <td>140tk</td>
+                                    <td>
+                                        <input type="number" value="1">
+                                    </td>
+                                    <td>7000tk</td>
+                                    <td>
+                                        <button>
+                                            <i class="ti-close"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>943758</td>
+                                    <td>lorem ipsum</td>
+                                    <td>Panjeri</td>
+                                    <td>140tk</td>
+                                    <td>
+                                        <input type="number" value="1">
+                                    </td>
+                                    <td>7000tk</td>
+                                    <td>
+                                        <button>
+                                            <i class="ti-close"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>943758</td>
+                                    <td>lorem ipsum</td>
+                                    <td>Panjeri</td>
+                                    <td>140tk</td>
+                                    <td>
+                                        <input type="number" value="1">
+                                    </td>
+                                    <td>7000tk</td>
+                                    <td>
+                                        <button>
+                                            <i class="ti-close"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>943758</td>
+                                    <td>lorem ipsum</td>
+                                    <td>Panjeri</td>
+                                    <td>140tk</td>
+                                    <td>
+                                        <input type="number" value="1">
+                                    </td>
+                                    <td>7000tk</td>
+                                    <td>
+                                        <button>
+                                            <i class="ti-close"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="total">
+                        <h6 class="mb-3">Total Bill: 15000tk</h6>
+                        <p>*Note: Cost will added Shipping Charge of 100-200tk only</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 shipping-form pt-5">
+                <form action="#" class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Your Name*" required>
+                        <input type="text" class="form-control" name="comapny-name" id="companyName" placeholder="Company Name">
+                        <input type="text" class="form-control" name="number" id="number" placeholder="Contact Number*" required>
+                        <select name="payment" id="payment" class="form-control">
+                            <option>Payment Method</option>
+                            <option value="bKash">bKash</option>
+                            <option value="direct">Direct</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <textarea class="form-control" name="address" id="address" cols="30" rows="4" placeholder="Shipping Address*" required></textarea>
+                        <input type="text" class="form-control" name="postcode" id="postcode" placeholder="Post Code*" required>
+                        <input type="text" class="form-control" name="district" id="district" placeholder="District" required>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Confirm Order</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- Touch Pin -->
+<script src="plugins/touchpin/jquery.bootstrap-touchspin.min.js"></script>
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
