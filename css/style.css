@@ -131,12 +131,21 @@ textarea.form-control {
 
 .category-content {
   box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.08);
-  padding: 20px 20px 0;
   border-radius: 4px;
+}
+
+.category-content .title {
+  padding: 20px 15px;
+  background: #60CAC6;
+}
+
+.category-content .title ul {
+  margin-bottom: 0;
 }
 
 .category-content .title ul .list-inline-item {
   font-family: "Montserrat", sans-serif;
+  color: #fff;
 }
 
 .category-content .title ul .list-inline-item:not(:last-child) {
@@ -152,8 +161,20 @@ textarea.form-control {
   font-weight: 600;
 }
 
+.category-item-list {
+  height: 600px;
+  overflow-y: auto;
+}
+
 .category-item-list .category-item {
-  padding: 20px;
+  padding: 30px 20px;
+}
+
+.category-item-list .category-item .item-id {
+  font-size: 12px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .category-item-list .category-item:not(:last-child) {
@@ -174,8 +195,8 @@ textarea.form-control {
       align-items: center;
   list-style: none;
   padding-left: 0;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .category-item-list .category-item ul.description li {
@@ -192,30 +213,32 @@ textarea.form-control {
   margin-right: 20px;
 }
 
-.category-item-list .category-item ul.description li:last-child {
+.category-item-list .category-item ul.description li:nth-child(2) {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
 }
 
-.category-item-list .category-item ul.description li:last-child input {
+.category-item-list .category-item ul.description li:nth-child(2) input {
   text-align: center;
-  height: 45px;
-  width: 120px;
+  height: 35px;
+  width: 90px;
+  padding: 0;
 }
 
-.category-item-list .category-item ul.description li:last-child .bootstrap-touchspin {
+.category-item-list .category-item ul.description li:nth-child(2) .bootstrap-touchspin {
   margin-left: 10px;
 }
 
-.category-item-list .category-item ul.description li:last-child .bootstrap-touchspin span {
+.category-item-list .category-item ul.description li:nth-child(2) .bootstrap-touchspin span {
   margin-left: 0;
 }
 
-.category-item-list .category-item ul.description li:last-child .bootstrap-touchspin button {
+.category-item-list .category-item ul.description li:nth-child(2) .bootstrap-touchspin button {
   border-radius: 0;
   height: 100%;
+  padding: 5px 10px;
 }
 
 .category-item-list .category-item .total {
