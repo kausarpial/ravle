@@ -170,11 +170,19 @@ textarea.form-control {
   padding: 30px 20px;
 }
 
-.category-item-list .category-item .item-id {
-  font-size: 12px;
+.category-item-list .category-item .header {
+  margin-bottom: 20px;
+}
+
+.category-item-list .category-item .header span {
+  font-size: 14px;
   font-weight: 600;
-  display: block;
+  display: inline-block;
   margin-bottom: 5px;
+}
+
+.category-item-list .category-item .header span:first-child {
+  margin-right: 30px;
 }
 
 .category-item-list .category-item:not(:last-child) {
@@ -195,11 +203,11 @@ textarea.form-control {
       align-items: center;
   list-style: none;
   padding-left: 0;
-  margin-bottom: 15px;
-  margin-top: 15px;
 }
 
 .category-item-list .category-item ul.description li {
+  margin-bottom: 15px;
+  margin-top: 15px;
   font-weight: 600;
 }
 
@@ -213,29 +221,29 @@ textarea.form-control {
   margin-right: 20px;
 }
 
-.category-item-list .category-item ul.description li:nth-child(2) {
+.category-item-list .category-item ul.description li:last-child {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
 }
 
-.category-item-list .category-item ul.description li:nth-child(2) input {
+.category-item-list .category-item ul.description li:last-child input {
   text-align: center;
   height: 35px;
   width: 90px;
   padding: 0;
 }
 
-.category-item-list .category-item ul.description li:nth-child(2) .bootstrap-touchspin {
-  margin-left: 10px;
+.category-item-list .category-item ul.description li:last-child .bootstrap-touchspin {
+  margin-left: 20px;
 }
 
-.category-item-list .category-item ul.description li:nth-child(2) .bootstrap-touchspin span {
+.category-item-list .category-item ul.description li:last-child .bootstrap-touchspin span {
   margin-left: 0;
 }
 
-.category-item-list .category-item ul.description li:nth-child(2) .bootstrap-touchspin button {
+.category-item-list .category-item ul.description li:last-child .bootstrap-touchspin button {
   border-radius: 0;
   height: 100%;
   padding: 5px 10px;
